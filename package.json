@@ -21,6 +21,7 @@
     "@types/node": "^20.12.12",
     "base64-to-file": "^1.1.0",
     "cors": "^2.8.5",
+    "decode-base64": "^3.0.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "ffmpeg": "^0.0.4",
@@ -29,6 +30,7 @@
     "react-native-fs": "^2.20.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
+    "youtube-mp3": "^0.1.2",
     "youtube-mp3-downloader": "^0.7.11",
     "yt-get": "^1.1.2"
   },
