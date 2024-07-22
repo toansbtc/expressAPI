@@ -13,21 +13,10 @@ app.post("/download", async (req, res, next) => {
     const videoURL = req.body.videoURL;
     const file_name = `${req.body.file_name}.mp3`;
 
+    console.log(videoID, videoURL, file_name)
+
     YTDL.getVideoMP3Base64(videoURL).then((data => {
         const { base64, title } = data;
-        // base64TOFile.convert(base64, "./src", ['mp3', 'mp4', 'WAV', 'WMA', 'webm'], (file_path: any) => {
-        //     console.log(file_path)
-        // })
-
-        // const binary = atob(base64);
-        // const u8 = new Uint8Array(binary.length);
-
-        // for (let i = 0, l = binary.length; i < l; i++) {
-
-        //     u8[i] = binary.charCodeAt(i);
-
-        // }
-        // const base64String = u8.reduce((data, byte) => data + String.fromCharCode(byte), '');
 
         const binaryData = Buffer.from(base64, 'base64');
 
